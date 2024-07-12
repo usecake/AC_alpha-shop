@@ -11,8 +11,8 @@ function App() {
   return (
       <Main>
         <StepProgress />
-        <Step />
-        <ProgressControl />
+        {/* <Step />
+        <ProgressControl /> */}
       </Main>
   )
 }

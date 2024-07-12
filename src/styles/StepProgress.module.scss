@@ -1,0 +1,32 @@
+.register-container {
+  :global {
+    .progress-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .progress-icon {
+        display: inline-block;
+        text-align: center;
+        padding: 0.25rem;
+        margin-right: 0.5rem;
+        height: 1rem;
+        width: 1rem;
+        border: 1px solid #000;
+        border-radius: 50%;
+        background: var(--progress-current-color);
+        color: var(--pg-addr-color);
+      }
+      .progress-bar {
+        width: 15%;
+        height: 2px;
+        background: var(--progress-current-color);
+      }
+    }
+  }
+}
+
+  // --undone-progress-border: #f0f0f5;
+  // --done-progress-border: #000000;
+  // --progress-current-color: #2a2a2a;
+  // --progress-done-color: #ffffff;
+  // --progress-undone-color: #afb1bd;
