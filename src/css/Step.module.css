@@ -1,0 +1,8 @@
+.form-container :global {
+  border: 1px solid #000;
+}
+.form-container :global .input-group {
+  color: var(--input-text);
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}/*# sourceMappingURL=Step.module.css.map */

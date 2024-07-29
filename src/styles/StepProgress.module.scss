@@ -4,22 +4,33 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      .progress-group {
+        display: flex;
+        align-items: center;
+      }
       .progress-icon {
         display: inline-block;
+        position: relative;
         text-align: center;
         padding: 0.25rem;
-        margin-right: 0.5rem;
-        height: 1rem;
-        width: 1rem;
-        border: 1px solid #000;
+        margin-right: .5rem;
+        height: 1.5rem;
+        width: 1.5rem;
         border-radius: 50%;
         background: var(--progress-current-color);
         color: var(--pg-addr-color);
+        .text {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
       .progress-bar {
         width: 15%;
         height: 2px;
         background: var(--progress-current-color);
+        margin-right: 0.5rem;
       }
     }
   }
