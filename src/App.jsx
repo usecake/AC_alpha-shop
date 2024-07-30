@@ -12,7 +12,7 @@ function App() {
     <Main>
       <StepProgress />
       <Step />
-      {/* <ProgressControl /> */}
+      <ProgressControl />
     </Main>
   )
 }

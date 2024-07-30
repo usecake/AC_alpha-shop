@@ -1,0 +1,15 @@
+.progress-control-container {
+  :global {
+    section {
+      justify-content: end;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .25rem;
+      gap: 1rem;
+      border-radius: .5rem;
+    }
+  }
+}
