@@ -1,15 +1,49 @@
 .progress-control-container {
   :global {
-    section {
-      justify-content: end;
+    section.progress-control-container {
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
     }
-    button {
+    section.button-group {
+      padding-top: 24px;
+      border-top: 1px solid #e6e6eb;
+    }
+    section.button-group button {
       display: flex;
       align-items: center;
+      height: 46px;
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      border-radius: 8px;
+      border-width: 0px;
+      padding: 0px;
+    }
+    section.button-group button > object {
+      width: 24px;
+      height: 24px;
+    }
+    section.button-group button.prev {
+      background-color: transparent;
+      line-height: 20px;
+      font-weight: 400;
+      color: #000000;
+    }
+    section.button-group button.prev > object {
+      margin-right: 12px;
+    }
+    section.button-group button.next {
       justify-content: center;
-      padding: .25rem;
-      gap: 1rem;
-      border-radius: .5rem;
+      width: 174px;
+      font-weight: 500;
+      line-height: 17px;
+      background: var(--pink);
+      color: #ffffff;
+      margin-left: auto;
+    }
+    section.button-group button.next > object {
+      margin-left: 12px;
     }
   }
 }

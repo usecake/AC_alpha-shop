@@ -3,7 +3,7 @@ import styles from '../styles/StepProgress.module.scss'
 export default function StepProgress() {
   return (
     <section
-      className={`${styles['register-container']} col col-lg-6 col-sm-12`}
+      className={`${styles['register-container']} col col-lg-6 col-sm-12 data-phase="1" data-total-price="0"`}
       data-phase='1'
       data-total-price='0'>
       <h2 className='register-title col col-12'>結帳</h2>

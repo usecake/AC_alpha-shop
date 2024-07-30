@@ -6,7 +6,7 @@ export default function ProgressControl() {
   return (
     <section className={`${styles['progress-control-container']} col col-lg-6 col-sm-12`}>
       <section className='button-group col col-12' data-phase='address'>
-        <button className='next col col-lg-3'>
+        <button className='next'>
           下一步
           <img src={rightArrow} alt='rightArrow'></img>
         </button>

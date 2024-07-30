@@ -1,5 +1,5 @@
 // 引入全局 CSS
-import 'normalize.css'
+// import 'normalize.css'
 import './styles/index.scss'
 // 引入元件
 import Main from './components/Main'
