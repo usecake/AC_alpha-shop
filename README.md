@@ -1,4 +1,7 @@
-### 階段一：Shop I 元件拆分
+## 階段二：Shop II 元件炫染
+<img width="1231" alt="截圖 2024-07-31 18 11 10" src="https://github.com/user-attachments/assets/f274d999-a0f4-4cab-b0f4-0a9a64b261bb">
+
+## 階段一：Shop I 元件拆分
 <img width="1230" alt="截圖 2024-07-30 15 06 08" src="https://github.com/user-attachments/assets/dedbe9b3-04ff-40cc-9a9c-13192f7a7aec">
 
 # Getting Started with Create React App
