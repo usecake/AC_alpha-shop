@@ -1,8 +1,8 @@
-import styles from '../styles/Step.module.scss'
+import styles from '../../../styles/Form.module.scss'
 
-export default function Step() {
+export default function Form() {
   return (
-    <section className={`${styles['form-container']} col col-lg-6 col-sm-12`}>
+    <section className={`${styles['form-container']} col col-lg-12 col-sm-12`}>
       <form className='col col-12' data-phase='address'>
         <h3 className='form-title'>寄送地址</h3>
         <section className='form-body col col-12'>

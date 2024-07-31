@@ -1,6 +1,6 @@
-import styles from '../styles/ProgressControl.module.scss'
-import rightArrow from '../assets/right-arrow.svg'
-// import leftArrow from '../assets/left-arrow.svg'
+import styles from '../../styles/ProgressControl.module.scss'
+import rightArrow from '../../assets/right-arrow.svg'
+// import leftArrow from '../../assets/left-arrow.svg'
 
 export default function ProgressControl() {
   return (

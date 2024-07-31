@@ -2,16 +2,16 @@
 // import 'normalize.css'
 import './styles/index.scss'
 // 引入元件
-import Main from './components/Main'
-import StepProgress from './components/StepProgress'
-import Step from './components/Step'
-import ProgressControl from './components/ProgressControl'
+import Main from './components/Main/Main'
+import Register from './components/Main/Register/Register'
+import Cart from './components/Main/Cart/Cart'
+import ProgressControl from './components/Main/ProgressControl'
 
 function App() {
   return (
     <Main>
-      <StepProgress />
-      <Step />
+      <Register />
+      <Cart />
       <ProgressControl />
     </Main>
   )
