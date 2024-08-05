@@ -6,16 +6,13 @@ import { useContext } from 'react'
 import { CartContext } from '../../Context/CartContext'
 
 export default function Cart() {
-  const { items, totalPrice, handleAmountChange } = useContext(CartContext)
+  const { totalPrice } = useContext(CartContext)
 
   return (
     <section className={`${styles['cart-container']} col col-lg-5 col-sm-12`}>
       <h3 className='cart-title'>購物籃</h3>
       <section className='product-list col col-12' data-total-price={{}}>
-        <Products
-          items={items}
-          handleAmountChange={handleAmountChange}
-        />
+        <Products />
       </section>
       <section className='cart-info shipping col col-12'>
         <div className='text'>運費</div>

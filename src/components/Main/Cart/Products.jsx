@@ -1,8 +1,11 @@
 import minus from '../../../assets/minus.svg'
 import plus from '../../../assets/plus.svg'
 import styles from '../../../styles/Products.module.scss'
+import { useContext } from 'react'
+import { CartContext } from '../../Context/CartContext'
 
-function Products({ items, handleAmountChange }) {
+function Products() {
+  const { items, handleAmountChange } = useContext(CartContext)
   return (
     <>
       {items.map((item) => (
