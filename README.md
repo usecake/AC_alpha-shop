@@ -1,4 +1,7 @@
-## 階段二：Shop II 元件炫染
+## 階段三：Shop III 實作元件
+<img width="1228" alt="截圖 2024-08-05 17 14 09" src="https://github.com/user-attachments/assets/fa399359-0f9f-449b-b1b5-cd78934cc638">
+
+## 階段二：Shop II 元件渲染
 <img width="1231" alt="截圖 2024-07-31 18 11 10" src="https://github.com/user-attachments/assets/f274d999-a0f4-4cab-b0f4-0a9a64b261bb">
 
 ## 階段一：Shop I 元件拆分
