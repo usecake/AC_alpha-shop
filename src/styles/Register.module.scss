@@ -6,7 +6,10 @@
       line-height: 38px;
       color: var(--main-text);
     }
-    section.register-container[data-phase='3']
+  }
+}
+
+section.register-container[data-phase='3']
       .progress-group[data-phase='shipping']
       .progress-icon
       .icon,
@@ -19,6 +22,7 @@
       .progress-icon
       .icon {
       display: inline-block;
+      border: 1px solid #000;
     }
     section.register-container[data-phase='3']
       .progress-group[data-phase='shipping']
@@ -61,6 +65,7 @@
       .icon {
       display: none;
     }
+
     section.register-container[data-phase='2']
       .progress-group[data-phase='credit-card']
       .progress-icon
@@ -176,13 +181,6 @@
       .progress-icon {
       color: var(--progress-done-color);
       background-color: transparent;
-    }
-
-    section.register-container h2.register-title {
-      font-weight: 700;
-      font-size: 32px;
-      line-height: 38px;
-      color: var(--main-text);
     }
 
     section.register-container[data-phase='1'] .progress-bar[data-order='1'] {
@@ -314,5 +312,3 @@
       .button-group[data-phase='credit-card'] {
       display: flex;
     }
-  }
-}

@@ -1,0 +1,105 @@
+//基本排版樣式
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 48px;
+  :global {
+    .progress-group {
+      display: flex;
+      .progress-icon {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 27px;
+        height: 27px;
+        margin-right: 8px;
+        border-radius: 50%;
+      }
+      .text::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1rem;
+      }
+      .progress-label {
+        font-weight: 400;
+        line-height: 28px;
+      }
+    }
+    .progress-bar {
+      display: flex;
+      flex-grow: 1;
+      max-width: 60px;
+      height: 1px;
+      margin: 0px 8px;
+      border-width: 1px;
+      border-style: solid;
+    }
+  }
+}
+
+// 階段顯示樣式
+@mixin progress-phases($current-phase) {
+  :global {
+    .progress-group {
+      @for $i from 1 through 3 {
+        $phase: nth((address, shipping, credit-card), $i);
+        &[data-phase='#{$phase}'] {
+          $is-current: $i == $current-phase;
+
+          > * {
+            color: if(
+              $is-current,
+              var(--main-text),
+              var(--progress-undone-color)
+            );
+          }
+
+          .progress-icon {
+            background: if(
+              $is-current,
+              var(--progress-current-color),
+              var(--background-color)
+            );
+            border: if(
+              $is-current,
+              none,
+              1px solid var(--progress-undone-color)
+            );
+
+            .text::after {
+              content: if($i < $current-phase, '\2713', '#{$i}');
+              color: if(
+                $is-current,
+                var(--pg-addr-color),
+                var(--progress-undone-color)
+              );
+            }
+          }
+        }
+      }
+    }
+
+    .progress-bar {
+      @for $i from 1 through 2 {
+        &[data-order='#{$i}'] {
+          border-color: if(
+            $i == $current-phase,
+            var(--progress-current-color),
+            var(--progress-undone-color)
+          );
+        }
+      }
+    }
+  }
+}
+
+.progress-container {
+  @for $phase from 1 through 3 {
+    &[data-phase='#{$phase}'] {
+      @include progress-phases($phase);
+    }
+  }
+}
