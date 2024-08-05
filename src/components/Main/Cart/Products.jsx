@@ -2,7 +2,7 @@ import minus from '../../../assets/minus.svg'
 import plus from '../../../assets/plus.svg'
 import styles from '../../../styles/Products.module.scss'
 
-function Products({ items, handleCount }) {
+function Products({ items, handleAmountChange }) {
   return (
     <>
       {items.map((item) => (
@@ -18,15 +18,15 @@ function Products({ items, handleCount }) {
                 <img
                   className='product-action'
                   src={minus}
-                  alt='minus'
-                  onClick={() => handleCount(item.id, 'minus')}
+                  alt='minus.svg'
+                  onClick={() => handleAmountChange(item.id, 'minus')}
                 />
                 <span className='product-count'>{item.quantity}</span>
                 <img
                   className='product-action'
                   src={plus}
-                  alt='plus'
-                  onClick={() => handleCount(item.id, 'plus')}
+                  alt='plus.svg'
+                  onClick={() => handleAmountChange(item.id, 'plus')}
                 />
               </div>
             </div>

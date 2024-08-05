@@ -2,6 +2,7 @@ import { useState } from 'react'
 // 引入全局 CSS
 import './styles/index.scss'
 // 引入元件
+import { CartProvider } from './components/Context/CartContext'
 import Main from './components/Main/Main'
 import Register from './components/Main/Register/Register'
 import Cart from './components/Main/Cart/Cart'
@@ -21,9 +22,11 @@ function App() {
   }
   return (
     <Main>
-      <Register stepPhase={stepPhase} />
-      <Cart />
-      <ProgressControl stepPhase={stepPhase} handleClick={handleClick} />
+      <CartProvider>
+        <Register stepPhase={stepPhase} />
+        <Cart />
+        <ProgressControl stepPhase={stepPhase} handleClick={handleClick} />
+      </CartProvider>
     </Main>
   )
 }
