@@ -1,35 +1,34 @@
-import Products from './Products'
+import Products 來自 './Products'
 // import product1 from '../assets/img/product1.jpg'
 // import product2 from '../assets/img/product2.jpg'
-import styles from '../../../styles/Cart.module.scss'
-import { useState } from 'react'
-import {click} from '@testing-library/user-event/dist/click'
+import styles 來自 '../../../styles/Cart.module.scss'
+import { useState } 來自 'react'
 
 const dataItems = [
   {
-    id: '1',
-    name: '貓咪罐罐',
-    img: 'https://picsum.photos/300/300?text=1',
-    price: 100,
-    quantity: 0,
-  },
+    id: '1'，
+    name: '貓咪罐罐'，
+    img: 'https://picsum.photos/300/300?text=1'，
+    price: 100，
+    quantity: 0，
+  }，
   {
-    id: '2',
-    name: '貓咪干干',
-    img: 'https://picsum.photos/300/300?text=2',
-    price: 200,
-    quantity: 0,
-  },
+    id: '2'，
+    name: '貓咪干干'，
+    img: 'https://picsum.photos/300/300?text=2'，
+    price: 200，
+    quantity: 0，
+  }，
 ]
-export default function Cart() {
-  const [items, setItems] = useState(dataItems)
-  const handleCount = (id, action) => {
+export 預設 function Cart() {
+  const [items， setItems] = useState(dataItems)
+  const handleCount = (id， action) => {
     setItems((prevItems) =>
       prevItems.map((item) => {
         if (item.id === id) {
           return {
             ...item,
-            quantity: Math.max(0, item.quantity + (action === 'plus' ? 1 : -1)),
+            quantity: Math.max(0, item.quantity + (action === 'plus' ? 1 : -1))，
           }
         }
         return item
